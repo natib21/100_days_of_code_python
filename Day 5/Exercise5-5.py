@@ -11,21 +11,20 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 password = []
 req = ''
 i=0
-for let in range(0,nr_letters):
-    letter =letters[random.randint(0,len(letters)-1)]
+for let in range(0, nr_letters):
+    letter = letters[random.randint(0, len(letters)-1)]
     password.append(letter) 
     
-for sym in range(0,nr_symbols):
-    symbole = symbols[random.randint(0,len(symbols)-1)]
+for sym in range(0, nr_symbols):
+    symbole = symbols[random.randint(0, len(symbols)-1)]
     password.append(symbole)
     
-for num in range(0,nr_numbers):
-    number = numbers[random.randint(0,len(numbers)-1)]
+for num in range(0, nr_numbers):
+    number = numbers[random.randint(0, len(numbers)-1)]
     password.append(number)
 
 random.shuffle(password)    
 
 for p in password:
     req += p
-
-print(f"Your Password is : {req}")    
+print(f"Your Password is: {req}")
